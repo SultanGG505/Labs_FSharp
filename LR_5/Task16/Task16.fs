@@ -14,7 +14,7 @@ let Eiler n func init =
           let new_a=a-1
           Eiler_ n func newInit new_a
     Eiler_ n func init n
- 
+ //36 (1 5 7 11 13 17 19 23 25 29 31 35) = 12
 let GO x F init =
     let rec GO_ x F init number =
         if number = 0 then init
