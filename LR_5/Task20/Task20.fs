@@ -1,4 +1,5 @@
 ﻿open System
+
 // максимальный простой делитель числа
 let check_simple a=
     let rec simple a cand=

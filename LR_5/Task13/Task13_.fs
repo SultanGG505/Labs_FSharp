@@ -1,10 +1,11 @@
 ﻿open System
 //Произведение цифр с помощью рекурсии вверх
+
 let rec pr_up x =
     match x with
-    |x when x<>1->(x%10)*(pr_up(x/10))
-    |x->1
- 
+    | 0 -> 1
+    | x -> (x % 10) * pr_up (x / 10)
+
  //поиск цифры с максимальным значением с помощью рекурсии вверх
 let rec max_up x =
     match x with
@@ -21,7 +22,10 @@ let rec min_up x =
 let rec pr_down x a =
     match x with 
     | x when x=0 ->a
-    | x->pr_down(x/10) a*(x%10)
+    | x->
+        let b = x/10
+        let c = x%10*a
+        pr_down(b) c
  
 //поиск максимальной цифры с помощью рекурсии вниз
 let rec max_down x a =
