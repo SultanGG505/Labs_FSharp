@@ -119,9 +119,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sulta\\Documents\\GitHub\\Labs_FSharp\\LR_6\\Task11\\Task11.fsproj",
-      "projectName": "Task11",
-      "projectPath": "C:\\Users\\sulta\\Documents\\GitHub\\Labs_FSharp\\LR_6\\Task11\\Task11.fsproj",
+      "projectUniqueName": "C:\\Users\\sulta\\Documents\\GitHub\\Labs_FSharp\\LR_6\\Task11\\Task_6.1-11.fsproj",
+      "projectName": "Task_6.1-11",
+      "projectPath": "C:\\Users\\sulta\\Documents\\GitHub\\Labs_FSharp\\LR_6\\Task11\\Task_6.1-11.fsproj",
       "packagesPath": "C:\\Users\\sulta\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\sulta\\Documents\\GitHub\\Labs_FSharp\\LR_6\\Task11\\obj\\",
       "projectStyle": "PackageReference",

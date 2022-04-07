@@ -3,10 +3,11 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>Task_1._3</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Task11.fs" />
+    <Compile Include="Task_6.2-12.3.fs" />
   </ItemGroup>
 
 </Project>
