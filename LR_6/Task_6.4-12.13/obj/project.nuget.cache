@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "gIZdXRLErDEOAFJN7eRfWoAsPNZR+ziIkQxXnhbLsYnoqteFg46EVbK5yXKTvXn5GIucWJl/l1QVHu3oxnrbOQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\sulta\\Documents\\GitHub\\Labs_FSharp\\LR_6\\Task_6.4-12.13\\Task_6.4-12.13.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sulta\\.nuget\\packages\\fsharp.core\\6.0.2\\fsharp.core.6.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
