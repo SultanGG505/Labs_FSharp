@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v6.0": {
       "Task_6.4-12.13/1.0.0": {
         "dependencies": {
-          "FSharp.Core": "6.0.2"
+          "FSharp.Core": "6.0.2",
+          "Task_6.1-11": "1.0.0"
         },
         "runtime": {
           "Task_6.4-12.13.dll": {}
@@ -62,6 +63,14 @@
             "locale": "zh-Hant"
           }
         }
+      },
+      "Task_6.1-11/1.0.0": {
+        "dependencies": {
+          "FSharp.Core": "6.0.2"
+        },
+        "runtime": {
+          "Task_6.1-11.dll": {}
+        }
       }
     }
   },
@@ -77,6 +86,11 @@
       "sha512": "sha512-8GZqv6buY71KQlWT+cl2eMi+aNX9xQ61RgI3Pzv9zPxPOX6tWCLRrBj0MYQ3h871r2RhiHUl7f0AXUD/POr8eA==",
       "path": "fsharp.core/6.0.2",
       "hashPath": "fsharp.core.6.0.2.nupkg.sha512"
+    },
+    "Task_6.1-11/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

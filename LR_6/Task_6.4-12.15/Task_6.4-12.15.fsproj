@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>Task_6._4_12._15</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Task_6.4-12.15.fs" />
+  </ItemGroup>
+
+</Project>
