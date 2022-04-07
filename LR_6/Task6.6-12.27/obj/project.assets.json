@@ -119,11 +119,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sulta\\Documents\\GitHub\\Labs_FSharp\\LR_6\\Task_6.4-12.15\\Task_6.5-12.15.fsproj",
-      "projectName": "Task_6.5-12.15",
-      "projectPath": "C:\\Users\\sulta\\Documents\\GitHub\\Labs_FSharp\\LR_6\\Task_6.4-12.15\\Task_6.5-12.15.fsproj",
+      "projectUniqueName": "C:\\Users\\sulta\\Documents\\GitHub\\Labs_FSharp\\LR_6\\Task6.6-12.27\\Task6.6-12.27.fsproj",
+      "projectName": "Task6.6-12.27",
+      "projectPath": "C:\\Users\\sulta\\Documents\\GitHub\\Labs_FSharp\\LR_6\\Task6.6-12.27\\Task6.6-12.27.fsproj",
       "packagesPath": "C:\\Users\\sulta\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sulta\\Documents\\GitHub\\Labs_FSharp\\LR_6\\Task_6.4-12.15\\obj\\",
+      "outputPath": "C:\\Users\\sulta\\Documents\\GitHub\\Labs_FSharp\\LR_6\\Task6.6-12.27\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
