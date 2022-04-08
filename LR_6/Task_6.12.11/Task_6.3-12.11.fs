@@ -1,12 +1,12 @@
 ﻿open System
 
-let Search list=
-    let rec S_ list  =
-        match list with
-        |[]-> list.Head
-        |h::t->
-        if list.Head<>list.Tail.Head then list.Tail.Head else S_ list.Tail
-    S_ list 
+let rec Search list =
+    match list with
+    | a::b::c::t -> 
+        match a,b,c with
+        | (x,y,z) | (y,x,z) | (y,z,x) when x <> y && y = z -> Some(x)
+        | _ -> Search (b::c::t)
+    | _ -> None
 let rec readList n = 
     if n=0 then []
     else

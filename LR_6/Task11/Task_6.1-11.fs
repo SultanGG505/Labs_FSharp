@@ -30,8 +30,7 @@ let rec change list (func: int -> int -> int -> int) =
 
 [<EntryPoint>]
 let main argv =
-    (* Console.WriteLine("Ввод n")
-    let n = Convert.ToInt32(Console.ReadLine()) *)
+    
     let list = readData
     Console.WriteLine("text")
     change list (fun x y z -> x+y+z) |> writeList
