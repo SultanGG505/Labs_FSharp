@@ -24,3 +24,8 @@ C:\Users\sulta\Documents\GitHub\Labs_FSharp\LR_7\Task__1.3\obj\Debug\net6.0\Task
 C:\Users\sulta\Documents\GitHub\Labs_FSharp\LR_7\Task__1.3\obj\Debug\net6.0\Task__1.3.dll
 C:\Users\sulta\Documents\GitHub\Labs_FSharp\LR_7\Task__1.3\obj\Debug\net6.0\Task__1.3.pdb
 C:\Users\sulta\Documents\GitHub\Labs_FSharp\LR_7\Task__1.3\obj\Debug\net6.0\Task__1.3.genruntimeconfig.cache
+C:\Users\sulta\Documents\GitHub\Labs_FSharp\LR_7\Task__1.3\bin\Debug\net6.0\Task__1.13.deps.json
+C:\Users\sulta\Documents\GitHub\Labs_FSharp\LR_7\Task__1.3\bin\Debug\net6.0\Task__1.13.runtimeconfig.json
+C:\Users\sulta\Documents\GitHub\Labs_FSharp\LR_7\Task__1.3\bin\Debug\net6.0\Task__1.13.exe
+C:\Users\sulta\Documents\GitHub\Labs_FSharp\LR_7\Task__1.3\bin\Debug\net6.0\Task__1.13.dll
+C:\Users\sulta\Documents\GitHub\Labs_FSharp\LR_7\Task__1.3\bin\Debug\net6.0\Task__1.13.pdb
