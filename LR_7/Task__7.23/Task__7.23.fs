@@ -26,4 +26,4 @@ let main argv =
     Console.WriteLine(" ")
     let newL= List.filter (fun x -> x<>min) list
     Console.WriteLine(List.min newL)
-    0 // return an integer exit code
+    0 

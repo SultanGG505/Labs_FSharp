@@ -28,4 +28,4 @@ let check list=
 [<EntryPoint>]
 let main argv =
     readData|>check|>Console.WriteLine
-    0 // return an integer exit code
+    0 

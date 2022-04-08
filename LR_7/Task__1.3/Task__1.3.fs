@@ -27,4 +27,4 @@ let main argv =
     Console.WriteLine("Введите индекс:")
     let num = Convert.ToInt32(Console.ReadLine())
     Check list num|>Console.WriteLine
-    0 // return an integer exit code
+    0 

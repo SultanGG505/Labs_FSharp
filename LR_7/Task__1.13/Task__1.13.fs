@@ -27,4 +27,4 @@ let main argv =
     let List2=list.[ind..List.length list]
     Console.WriteLine("answer - ")
     writelist(List2@List1)
-    0 // return an integer exit code
+    0

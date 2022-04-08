@@ -25,4 +25,4 @@ let main argv =
     let newL = List.filter (fun x->x=min) list
     Console.Write("Answer - ")
     Console.Write(List.length newL)
-    0 // return an integer exit code
+    0 
