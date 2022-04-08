@@ -25,4 +25,4 @@ let main argv =
     let list= readData
     Console.WriteLine("Answer is - ")
     Console.Write(Search list)
-    0 // return an integer exit code
+    0 

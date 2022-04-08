@@ -44,4 +44,10 @@ let change list=
         
 [<EntryPoint>]
 let main argv =
-    readData|> change|>writeList 
+    let l = readData
+    let answ = change l
+    Console.WriteLine("and")
+    writeList answ
+
+
+    
