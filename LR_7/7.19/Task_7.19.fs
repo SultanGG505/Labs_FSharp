@@ -39,7 +39,7 @@ let drop (s:string) =
             raz newS (words@[newWord])
     raz s []
 
-// перемешивание по длине слов
+// перемешивание
 let RND s =
     let newS = drop s 
     let rnd = System.Random()
@@ -85,17 +85,27 @@ let readArray n=
        read newn newCand
     read n Array.empty
 
+let fook n =
+        match n with 
+            |1 -> 
+                Console.WriteLine "Введите строку, которую хотите перемешать"
+                let (s:string) = Console.ReadLine()
+                Console.WriteLine (ToString(RND s))
+            |2 -> 
+                printf "Введите строку, которую хотите перемешать"
+                let (s:string) = Console.ReadLine()
+                Console.WriteLine "Количество слов с чётным количеством букв"
+                Console.WriteLine (check_count s)
+            |3 -> 
+                Console.WriteLine "Введите три цвета"
+                let arr = readArray 3 
+                printfn "%A" (sortFlag arr)
+            |_-> Console.WriteLine "Ошибка ввода"
     
 
 [<EntryPoint>]
 let main argv =
-    Console.WriteLine "Введите строку, которую хотите перемешать"
-    let (s:string) = Console.ReadLine()
-    Console.WriteLine (ToString(RND s))
-
-    Console.WriteLine "Количество слов с чётным количеством букв"
-    Console.WriteLine (check_count s)
-    
-    let arr = readArray 3 
-    printfn "%A" (sortFlag arr)
+    Console.WriteLine "Выберите функцию 1-3"
+    let n = Convert.ToInt32(Console.ReadLine())
+    fook n
     0
