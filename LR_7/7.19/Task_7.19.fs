@@ -4,6 +4,8 @@
 3 Дана строка в которой слова записаны через пробел. Необходимо
 перемешать все слова этой строки в случайном порядке.
 8 Дана строка в которой записаны слова через пробел. Необходимо посчитать количество слов с четным количеством символов.
+16 Дан массив в котором находятся строки "белый", "синий" и "красный" в случайном порядке. Необходимо упорядочить массив так,
+чтобы получился российский флаг.
 *)
 
 let rec writeString = function
@@ -69,6 +71,20 @@ let check_count (s:string) =
     let res = Acc s1 (fun x y-> if (x.Length % 2 = 0) then y + 1 else y ) (fun x-> true) 0
     res
 
+///
+let sortFlag (arr:string array) = 
+    let newArr = Array.sortBy (fun (x:string)-> x.[0]) arr 
+    newArr
+
+let readArray n=
+    let rec read n cand=
+      if n=0 then cand else
+       let new_el=System.Console.ReadLine()
+       let newCand=Array.append cand [|new_el|]
+       let newn=n-1
+       read newn newCand
+    read n Array.empty
+
     
 
 [<EntryPoint>]
@@ -79,4 +95,7 @@ let main argv =
 
     Console.WriteLine "Количество слов с чётным количеством букв"
     Console.WriteLine (check_count s)
+    
+    let arr = readArray 3 
+    printfn "%A" (sortFlag arr)
     0
