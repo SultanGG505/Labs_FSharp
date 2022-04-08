@@ -1,8 +1,8 @@
 ﻿open System
 
 (*
-Дан целочисленный массив. Необходимо разместить элементы,
-расположенные до минимального, в конце массива.
+Дан целочисленный массив. Необходимо найти два наименьших
+элемента.
 *)
 
 let rec readList n =
@@ -21,10 +21,9 @@ let rec writelist list=
 let main argv =
     let list = readData
     let min = List.min list
-    let ind= List.findIndex (fun x -> x=min) list
-    let index = List.indexed list
-    let List1= list.[0..(ind-1)]
-    let List2=list.[ind..List.length list]
-    Console.WriteLine("answer - ")
-    writelist(List2@List1)
+    Console.WriteLine(" ")
+    Console.WriteLine(min)
+    Console.WriteLine(" ")
+    let newL= List.filter (fun x -> x<>min) list
+    Console.WriteLine(List.min newL)
     0 // return an integer exit code
