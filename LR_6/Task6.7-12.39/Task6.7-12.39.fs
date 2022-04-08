@@ -41,8 +41,8 @@ let writer list (list2:int list) p =
 [<EntryPoint>]
 let main argv =
     let list = readData  
-    let chlist = writer list list (fun x->if x % 2 = 0 then true else false)
-    let nechlist= writer list list (fun x->if x % 2 = 1 then true else false)
+    let chlist = writer list list (fun x-> x % 2 = 0)
+    let nechlist= writer list list (fun x-> x % 2 = 1)
     let newl= chlist@nechlist
     Console.WriteLine("text")
     writeList newl

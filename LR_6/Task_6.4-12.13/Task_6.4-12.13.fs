@@ -51,7 +51,7 @@ let change list=
 let main argv =
     let l = readData
     let answ = change l
-    Console.WriteLine("and")
+    Console.WriteLine("result")
     writeList answ
 
 
