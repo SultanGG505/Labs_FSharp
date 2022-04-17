@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Task_5-6-7.fs" />
+    <Compile Include="Task_5-6-7-8.fs" />
   </ItemGroup>
 
 </Project>
