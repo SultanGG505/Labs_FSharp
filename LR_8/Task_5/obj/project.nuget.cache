@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EPPTDgKdNGtmLd+m3CZNAKMfmeATo8vzOetQVQvDojIUHf0VdmazactaERWljeaMT4Ufb2Q3nrJfDi+kHpO1zw==",
+  "dgSpecHash": "jIfUvMECDWJhdPftKXR5/onkxRUvSijR+yCoiqi3npwD+5rjLBYahQhLmUYuPTgb11Soz/FHdXpMXSaUBM6xSA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sulta\\Documents\\GitHub\\Labs_FSharp\\LR_8\\Task_5\\Task_5-6.fsproj",
+  "projectFilePath": "C:\\Users\\sulta\\Documents\\GitHub\\Labs_FSharp\\LR_8\\Task_5\\Task_5-6-7.fsproj",
   "expectedPackageFiles": [
     "C:\\Users\\sulta\\.nuget\\packages\\fsharp.core\\6.0.2\\fsharp.core.6.0.2.nupkg.sha512"
   ],
