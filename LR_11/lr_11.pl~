@@ -63,7 +63,7 @@ fact_down(N,A,X):-A1 is A*N,N1 is N-1,fact_down(N1,A1,X).
 fact_down(N,X):-fact_down(N,1,X).
 sum_dig(0,0).
 sum_dig(N,X):-N1 is N div 10,sum_dig(N1,X1),X is X1+(N mod 10).
-/*text/
+/*текст*/
 
 
-/*11 num/
+/*11 задача*/
