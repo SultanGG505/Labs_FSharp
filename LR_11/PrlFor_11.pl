@@ -64,10 +64,17 @@ woman:- woman(X),print(X),nl,fail.
 является ли X дочерью Y. Построить предикат, daughter(X), который
 выводит дочь X.*/
 
-daughter(X):- parent(X,Y),woman(Y),write(Y),nl,fail.
 daughter(X,Y):- woman(X),parent(Y,X).
+daughter(X):- parent(X,Y),woman(Y),write(Y),nl,fail.
 
+/*Task 12*/
+/*Вариант № 3. Построить предикат wife(X, Y), который проверяет,
+является ли X женой Y. Построить предикат wife(X), который выводит
+жену X*/
 
+/*основываюсь на том, что у и мужа и жены есть ребёнок*/
+
+wife(X,Y):- parent(X,Z),parent(Y,Z), (  (woman(X);woman(Y)),(man(X);man(Y))).
 
 
 
