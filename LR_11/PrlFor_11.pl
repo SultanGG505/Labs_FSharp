@@ -74,9 +74,10 @@ daughter(X):- parent(X,Y),woman(Y),write(Y),nl,fail.
 
 /*основываюсь на том, что у и мужа и жены есть ребёнок*/
 
-wife(X,Y):- parent(X,Z),parent(Y,Z), (  (woman(X);woman(Y)),(man(X);man(Y))).
+wife(X,Y):- parent(X,Z),parent(Y,Z), ((woman(X);woman(Y)),(man(X);man(Y))).
 
-
+/*т.к предикат от одного аргумента предикат реализован как "нахождение жены"*/
+wife(X):- man(X),parent(X,Z),parent(Y,Z),woman(Y),write(Y).
 
 
 
