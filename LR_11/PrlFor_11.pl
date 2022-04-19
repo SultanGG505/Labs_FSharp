@@ -56,10 +56,13 @@ parent(Arseniy,Valera).
 parent(Natasha,Nastya).
 parent(Natasha,Valera).
 
+parent(X,Y,Z):- parent(X,Y),parent(Z,Y),man(X),woman(Z),print(Y),nl,fail.
+
 man:-man(X),print(X),nl,fail.
 woman:- woman(X),print(X),nl,fail.
 parent:- parent(X,zdislava),print(X),nl,fail.
 mother(X,Y):-woman(X),parent(X,Y).
+father(X,Y):-man(X),parent(X,Y).
 brother(X,Y):- parent(Z,X),parent(Z,Y),X\=Y.
 grand_pa(X,Y):-parent(X,Z),parent(Z,Y).
 uncle(X,Y):-brother(X,Z),parent(Z,Y).
@@ -71,7 +74,14 @@ fact_down(N,A,X):-A1 is A*N,N1 is N-1,fact_down(N1,A1,X).
 fact_down(N,X):-fact_down(N,1,X).
 sum_dig(0,0).
 sum_dig(N,X):-N1 is N div 10,sum_dig(N1,X1),X is X1+(N mod 10).
-/*text/
 
 
-/*11 num/
+
+/* Task 11*/
+/*Вариант № 3. Построить предикат daughter(X, Y), который проверяет,
+является ли X дочерью Y. Построить предикат, daughter(X), который
+выводит дочь X.*/
+
+
+daughter(X,Y):- woman(X),parent(Y,X).
+
