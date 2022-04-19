@@ -74,8 +74,37 @@ daughter(X):- parent(X,Y),woman(Y),write(Y),nl,fail.
 
 /*основываюсь на том, что у и мужа и жены есть ребЄнок*/
 
-wife(X,Y):- parent(X,Z),parent(Y,Z), (  (woman(X);woman(Y)),(man(X);man(Y))).
+wife(X,Y):- parent(X,Z),parent(Y,Z), ((woman(X);woman(Y)),(man(X);man(Y))).
+
+/*т.к предикат от одного аргумента предикат реализован как "нахождение жены"*/
 wife(X):- man(X),parent(X,Z),parent(Y,Z),woman(Y),write(Y).
+
+/*Task 13*/
+/*¬ариант 3. ѕостроить предикат grand_ma(X, Y), который провер€ет,
+€вл€етс€ ли X бабушкой Y. ѕостроить предикат grand_mas(X), который
+выводит всех бабушек X.*/
+
+man(valera1).
+man(valera2).
+man(valera3).
+
+woman(anna1).
+woman(anna2).
+woman(anna3).
+
+parent(anna1,anna2).
+parent(anna2,anna3).
+/*anna1- бабушка anna3*/
+
+grand_ma(X,Y):- woman(X),parent(X,parent(Z,Y)).
+
+
+
+
+
+
+
+
 
 
 
