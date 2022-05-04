@@ -18,10 +18,10 @@ C:\Users\sulta\Documents\GitHub\Labs_FSharp\LR_8\Task1(POD_LR_4)\bin\Debug\net5.
 C:\Users\sulta\Documents\GitHub\Labs_FSharp\LR_8\Task1(POD_LR_4)\bin\Debug\net5.0\tr\FSharp.Core.resources.dll
 C:\Users\sulta\Documents\GitHub\Labs_FSharp\LR_8\Task1(POD_LR_4)\bin\Debug\net5.0\zh-Hans\FSharp.Core.resources.dll
 C:\Users\sulta\Documents\GitHub\Labs_FSharp\LR_8\Task1(POD_LR_4)\bin\Debug\net5.0\zh-Hant\FSharp.Core.resources.dll
-C:\Users\sulta\Documents\GitHub\Labs_FSharp\LR_8\Task1(POD_LR_4)\obj\Debug\net5.0\Task1(POD_LR_4).fsproj.AssemblyReference.cache
 C:\Users\sulta\Documents\GitHub\Labs_FSharp\LR_8\Task1(POD_LR_4)\obj\Debug\net5.0\Task1(POD_LR_4).AssemblyInfoInputs.cache
 C:\Users\sulta\Documents\GitHub\Labs_FSharp\LR_8\Task1(POD_LR_4)\obj\Debug\net5.0\Task1(POD_LR_4).AssemblyInfo.fs
 C:\Users\sulta\Documents\GitHub\Labs_FSharp\LR_8\Task1(POD_LR_4)\obj\Debug\net5.0\Task1(POD_LR_4).fsproj.CopyComplete
 C:\Users\sulta\Documents\GitHub\Labs_FSharp\LR_8\Task1(POD_LR_4)\obj\Debug\net5.0\Task1(POD_LR_4).dll
 C:\Users\sulta\Documents\GitHub\Labs_FSharp\LR_8\Task1(POD_LR_4)\obj\Debug\net5.0\Task1(POD_LR_4).pdb
 C:\Users\sulta\Documents\GitHub\Labs_FSharp\LR_8\Task1(POD_LR_4)\obj\Debug\net5.0\Task1(POD_LR_4).genruntimeconfig.cache
+C:\Users\sulta\Documents\GitHub\Labs_FSharp\LR_8\Task1(POD_LR_4)\obj\Debug\net5.0\Task1(POD_LR_4).fsproj.AssemblyReference.cache
