@@ -92,6 +92,13 @@ parent(anna2,anna3).
 
 grand_ma(X,Y):- woman(X),parent(X,Z),parent(Z,Y).
 
+/*Task 14*/
+/*Variant 3. Postroit predikat grand_ma_and_da_X_Y,_ 
+kotorii proveryaet_ yavlyayutsya li X i Y babushkoi i vnuchkoi ili vnuchkoi i babushkoi.*/
+grand_ma_and_da(X,Y) :- woman(Y),woman(X),(grand_ma(X,Y);grand_ma(Y,X)).
+
+
+
 
 
 
