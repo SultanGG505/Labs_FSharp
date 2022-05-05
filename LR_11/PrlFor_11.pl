@@ -115,3 +115,17 @@ findMultNumsUp(X,Y) :-
     N is X mod 10,
     Mod is N mod 5,
     (0 is Mod, findMultNumsUp(V,Y);(findMultNumsUp(V,C), Y is N * C)).
+
+% Task 18 Вариант № 3. Найти произведение цифр числа, не делящихся на 5.
+findMultNumsDown(X,Y,Z) :- 
+    X < 10,
+    Mod is X mod 5,
+    (0 is Mod,Y is Z; Y is Z * X).
+findMultNumsDown(X,Y,Z) :-
+    N is X mod 10,
+    V is X div 10,
+    Mod is N mod 5,
+    (0 is Mod,NewZ is Z;NewZ is N * Z),
+    findMultNumsDown(V,Y,NewZ).
+
+findMultNumsDown(X,Y) :- findMultNumsDown(X,Y,1).
