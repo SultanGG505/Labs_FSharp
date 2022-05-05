@@ -96,11 +96,22 @@ grand_ma_and_da(X,Y) :- woman(Y),woman(X),(grand_ma(X,Y);grand_ma(Y,X)).
 
 % Task 15 Найти минимальную цифру числа с помощью рекурсии вверх.
 
-mindigit_up(0,9) :- !.
-mindigit_up(X,Digit) :- X1 is X div 10, mindigit_up(X1,Dig1), Dig2 is X mod 10, (Dig1 < Dig2, Digit is Dig1; Digit is Dig2), !.
+minDigitUp(0,9) :- !.
+minDigitUp(X,Digit) :- X1 is X div 10, minDigitUp(X1,Dig1), Dig2 is X mod 10, (Dig1 < Dig2, Digit is Dig1; Digit is Dig2), !.
 
-% 16 Найти минимальную цифру числа с помощью рекурсии вниз
-minDigit_Down(N, X) :- minDigit_Down(N, 9, X).
-minDigit_Down(0, X, X) :- !.
-minDigit_Down(N, Digit, X) :- N1 is N div 10, Dig is N mod 10, Dig < Digit, !, minDigit_Down(N1, Dig, X); 
-N2 is N div 10, minDigit_Down(N2, Digit, X).
+% Task 16 Найти минимальную цифру числа с помощью рекурсии вниз
+minDigitDown(N, X) :- minDigitDown(N, 9, X).
+minDigitDown(0, X, X) :- !.
+minDigitDown(N, Digit, X) :- N1 is N div 10, Dig is N mod 10, Dig < Digit, !, minDigitDown(N1, Dig, X); 
+N2 is N div 10, minDigitDown(N2, Digit, X).
+
+% Task 17 Вариант № 3. Найти произведение цифр числа, не делящихся на 5. 
+findMultNumsUp(X,Y) :- 
+    X < 10,
+    Mod is X mod 5,
+    (0 is Mod, Y is 1; Y is X).
+findMultNumsUp(X,Y) :-
+    V is X div 10,
+    N is X mod 10,
+    Mod is N mod 5,
+    (0 is Mod, findMultNumsUp(V,Y);(findMultNumsUp(V,C), Y is N * C)).
