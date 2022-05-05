@@ -60,29 +60,23 @@ man:-man(X),print(X),nl,fail.
 woman:- woman(X),print(X),nl,fail.
 
 /* Task 11*/
-/*Вариант № 3. Построить предикат daughter(X, Y), который проверяет,
-является ли X дочерью Y. Построить предикат, daughter(X), который
-выводит дочь X.*/
+/*Variant в„– 3. Postroit predikat daughter_X_ Y,_ kotorii proveryaet_ yavlyaetsya li  X docheryu Y.
+ Postroit predikat_ daughter_X,_ kotorii vivodit doch X. */
 
 daughter(X,Y):- woman(X),parent(Y,X).
 daughter(X):- parent(X,Y),woman(Y),write(Y),nl,fail.
 
 /*Task 12*/
-/*Вариант № 3. Построить предикат wife(X, Y), который проверяет,
-является ли X женой Y. Построить предикат wife(X), который выводит
-жену X*/
-
-/*основываюсь на том, что у и мужа и жены есть ребёнок*/
+/*Variant в„– 3. Postroit predikat wife_X_ Y,_ kotorii proveryaet_ yavlyaetsya li X jenoi Y.
+ Postroit predikat wife_X,_ kotorii vivodit jenu X.*/
 
 wife(X,Y):- parent(X,Z),parent(Y,Z), ((woman(X);woman(Y)),(man(X);man(Y))).
-
-/*т.к предикат от одного аргумента предикат реализован как "нахождение жены"*/
 wife(X):- man(X),parent(X,Z),parent(Y,Z),woman(Y),write(Y).
 
 /*Task 13*/
-/*Вариант 3. Построить предикат grand_ma(X, Y), который проверяет,
-является ли X бабушкой Y. Построить предикат grand_mas(X), который
-выводит всех бабушек X.*/
+/*Variant 3. Postroit predikat grand_ma_X_ Y,_ kotorii proveryaet_ yavlyaetsya li X babushkoi Y.
+ Postroit predikat grand_mas_X,_ kotorii vivodit vseh babushek X.
+*/
 
 man(valera1).
 man(valera2).
@@ -94,7 +88,7 @@ woman(anna3).
 
 parent(anna1,anna2).
 parent(anna2,anna3).
-/*anna1- бабушка anna3*/
+/*anna1- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ anna3(РІРёРґРёРјРѕ РєСЂР°РєРѕР·СЏР±СЂР° РїСЂРѕ С‚Рѕ, РєС‚Рѕ РєРѕРјСѓ Р±Р°Р±СѓС€РєР°)*/
 
 grand_ma(X,Y):- woman(X),parent(X,Z),parent(Z,Y).
 
