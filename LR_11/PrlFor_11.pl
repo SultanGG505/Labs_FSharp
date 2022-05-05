@@ -105,7 +105,7 @@ minDigitDown(0, X, X) :- !.
 minDigitDown(N, Digit, X) :- N1 is N div 10, Dig is N mod 10, Dig < Digit, !, minDigitDown(N1, Dig, X); 
 N2 is N div 10, minDigitDown(N2, Digit, X).
 
-% Task 17 Вариант № 3. Найти произведение цифр числа, не делящихся на 5. 
+% Task 17 Вариант № 3. Найти произведение цифр числа, не делящихся на 5(рек. вверх)
 findMultNumsUp(X,Y) :- 
     X < 10,
     Mod is X mod 5,
@@ -116,7 +116,7 @@ findMultNumsUp(X,Y) :-
     Mod is N mod 5,
     (0 is Mod, findMultNumsUp(V,Y);(findMultNumsUp(V,C), Y is N * C)).
 
-% Task 18 Вариант № 3. Найти произведение цифр числа, не делящихся на 5.
+% Task 18 Вариант № 3. Найти произведение цифр числа, не делящихся на 5(рек. вниз)
 findMultNumsDown(X,Y,Z) :- 
     X < 10,
     Mod is X mod 5,
@@ -129,3 +129,7 @@ findMultNumsDown(X,Y,Z) :-
     findMultNumsDown(V,Y,NewZ).
 
 findMultNumsDown(X,Y) :- findMultNumsDown(X,Y,1).
+
+% Задание 19. Реализовать предикат fib(N,X), где X – число Фибоначчи с номером N,
+% причем 1 и 2 элемент равны 1 с помощью рекурсии вверх
+
