@@ -60,22 +60,25 @@ man:-man(X),print(X),nl,fail.
 woman:- woman(X),print(X),nl,fail.
 
 /* Task 11*/
-/*Variant № 3. Postroit predikat daughter_X_ Y,_ kotorii proveryaet_ yavlyaetsya li  X docheryu Y.
- Postroit predikat_ daughter_X,_ kotorii vivodit doch X. */
+/*Вариант № 3. Построить предикат daughter(X, Y), который проверяет, является ли  X дочерью Y.
+ Построить предикат, daughter(X), который выводит дочь X. 
+ */
 
 daughter(X,Y):- woman(X),parent(Y,X).
 daughter(X):- parent(X,Y),woman(Y),write(Y),nl,fail.
 
 /*Task 12*/
-/*Variant № 3. Postroit predikat wife_X_ Y,_ kotorii proveryaet_ yavlyaetsya li X jenoi Y.
- Postroit predikat wife_X,_ kotorii vivodit jenu X.*/
+/*Вариант № 3. Построить предикат wife(X, Y), который проверяет, является ли X женой Y.
+ Построить предикат wife(X), который выводит жену X.
+ */
 
 wife(X,Y):- parent(X,Z),parent(Y,Z), ((woman(X);woman(Y)),(man(X);man(Y))).
 wife(X):- man(X),parent(X,Z),parent(Y,Z),woman(Y),write(Y).
 
 /*Task 13*/
-/*Variant 3. Postroit predikat grand_ma_X_ Y,_ kotorii proveryaet_ yavlyaetsya li X babushkoi Y.
- Postroit predikat grand_mas_X,_ kotorii vivodit vseh babushek X.
+/*
+Вариант 3. Построить предикат grand_ma(X, Y), который проверяет, является ли X бабушкой Y. 
+Построить предикат grand_mas(X), который выводит всех бабушек X.
 */
 
 man(valera1).
@@ -91,21 +94,19 @@ parent(anna2,anna3).
 /*anna1- ������� anna3(видимо кракозябра про то, кто кому бабушка)*/
 
 grand_ma(X,Y):- woman(X),parent(X,Z),parent(Z,Y).
+grand_mas(X) :- parent(Y,X),parent(Z,Y),print(Z),nl,fail.
 
 /*Task 14*/
-/*Variant 3. Postroit predikat grand_ma_and_da_X_Y,_ 
-kotorii proveryaet_ yavlyayutsya li X i Y babushkoi i vnuchkoi ili vnuchkoi i babushkoi.*/
+/*Вариант 3. Построить предикат grand_ma_and_da(X,Y), 
+который проверяет, являются ли X и Y бабушкой и внучкой или внучкой и бабушкой.
+*/
+
 grand_ma_and_da(X,Y) :- woman(Y),woman(X),(grand_ma(X,Y);grand_ma(Y,X)).
 
+/*Task 15*/
+/*
+Найти минимальную цифру числа с помощью рекурсии вверх.
+*/
 
-
-
-
-
-
-
-
-
-
-
-
+mindigit_up(0,9) :- !.
+mindigit_up(X,Digit) :- X1 is X div 10, mindigit_up(X1,Dig1), Dig2 is X mod 10, (Dig1 < Dig2, Digit is Dig1; Digit is Dig2), !.
