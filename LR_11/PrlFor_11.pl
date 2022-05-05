@@ -133,3 +133,5 @@ findMultNumsDown(X,Y) :- findMultNumsDown(X,Y,1).
 % Задание 19. Реализовать предикат fib(N,X), где X – число Фибоначчи с номером N,
 % причем 1 и 2 элемент равны 1 с помощью рекурсии вверх
 
+fibUp(N,X) :- N < 3, X is 1.
+fibUp(N, X) :- N1 is N - 1, N2 is N - 2, fibUp(N1,X1), fibUp(N2,X2), X is X1 + X2.
