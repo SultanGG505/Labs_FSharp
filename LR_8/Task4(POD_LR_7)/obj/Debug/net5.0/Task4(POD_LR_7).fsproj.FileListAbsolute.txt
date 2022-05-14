@@ -24,3 +24,4 @@ C:\Users\sulta\Documents\GitHub\Labs_FSharp\LR_8\Task4(POD_LR_7)\obj\Debug\net5.
 C:\Users\sulta\Documents\GitHub\Labs_FSharp\LR_8\Task4(POD_LR_7)\obj\Debug\net5.0\Task4(POD_LR_7).dll
 C:\Users\sulta\Documents\GitHub\Labs_FSharp\LR_8\Task4(POD_LR_7)\obj\Debug\net5.0\Task4(POD_LR_7).pdb
 C:\Users\sulta\Documents\GitHub\Labs_FSharp\LR_8\Task4(POD_LR_7)\obj\Debug\net5.0\Task4(POD_LR_7).genruntimeconfig.cache
+C:\Users\sulta\Documents\GitHub\Labs_FSharp\LR_8\Task4(POD_LR_7)\obj\Debug\net5.0\Task4(POD_LR_7).fsproj.AssemblyReference.cache

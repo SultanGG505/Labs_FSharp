@@ -21,3 +21,4 @@ C:\Users\sulta\Documents\GitHub\Labs_FSharp\LR_8\Task_5\obj\Debug\.netframework,
 C:\Users\sulta\Documents\GitHub\Labs_FSharp\LR_8\Task_5\obj\Debug\.netframework,version=v4.7.2\Task_5-6-7-8.fsproj.CopyComplete
 C:\Users\sulta\Documents\GitHub\Labs_FSharp\LR_8\Task_5\obj\Debug\.netframework,version=v4.7.2\Task_5-6-7-8.exe
 C:\Users\sulta\Documents\GitHub\Labs_FSharp\LR_8\Task_5\obj\Debug\.netframework,version=v4.7.2\Task_5-6-7-8.pdb
+C:\Users\sulta\Documents\GitHub\Labs_FSharp\LR_8\Task_5\obj\Debug\.netframework,version=v4.7.2\Task_5-6-7-8.fsproj.SuggestedBindingRedirects.cache
