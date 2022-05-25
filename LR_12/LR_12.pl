@@ -17,3 +17,14 @@ m_s_u(X,N,Y):-
     N1 is N-1,
     m_s_u(X,N1,Y).
 
+m_s_d(N,X):-m(N,N,X,2).
+m(_,2,X,X):-!.
+m(N,Cur,X,M):-
+    pr(Cur),
+    0 is N mod Cur,!,
+    max(M,Cur,L),
+    N1 is Cur-1,
+    m(N,N1,X,L).
+m(N,Cur,X,M):-
+    NewCur is Cur - 1,
+    m(N,NewCur,X,M).
