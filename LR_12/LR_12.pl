@@ -215,3 +215,18 @@ ask19:-
     read(N),
     readList(N,L),
     shift(L,1,K), write_list(K).
+
+% 20(30) Дан целочисленный массив и натуральный индекс (число, меньшее
+% размера массива). Необходимо определить является ли элемент по указанному индексу локальным максимумом.
+
+locMax(L,I):-I1 is I -1, I2 is I+1,byindex(L,I1,El1),
+    byindex(L,I,El),byindex(L,I2,El2),
+    El1<El,El2<El,!.
+
+ask20:-
+    write('Input N -'),
+    read(N),
+    readList(N,L),
+    write('Input I -'),
+    read(I),
+    locMax(L,I),!.
