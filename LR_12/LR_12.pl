@@ -155,3 +155,30 @@ ask16:-
     readList(N,L),
     ch(L,K),
     write(K).
+
+%17(13) Дан целочисленный массив. Необходимо разместить элементы, расположенные до минимального, в конце массива.
+
+indMinEl([H|T],Ot):-indMinEl(T,Ot,0,1,H).
+indMinEl([],K,K,_,_):-!.
+indMinEl([H|T],Ot,IM,I,Min):-
+    (   H<Min,IM1 is I,Min1 is H;
+    IM1 is IM,Min1 is Min),
+    I1 is I+1,
+    indMinEl(T,Ot,IM1,I1,Min1).
+
+concatList([], List2, List2).
+concatList([H|T],List2,[H|NewList]) :- concatList(T,List2,NewList).
+
+moveBeforeMin([H|T],List):-indMinEl([H|T],Ind),
+    moveBeforeMin([H|T],List,Ind,0,[]).
+moveBeforeMin(L1,List,IndMin,IndMin,L2):- concatList(L1,L2,List),!.
+moveBeforeMin([H|T],List,IndMin,IndNow,NowList):-
+    NewInd is IndNow+1, concatList(NowList,[H],NewList),
+    moveBeforeMin(T,List,IndMin,NewInd,NewList).
+ask17:-
+    write('Input N -'),
+    read(N),
+    readList(N,List),
+    moveBeforeMin(List,NewList),
+    write('New List: '),
+    write_list(NewList),!.
