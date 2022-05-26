@@ -131,3 +131,27 @@ ask15:-
     byindex(L,I,Elind),
     maxEl(L,Elmax),
     (Elind =:= Elmax,write(yes);write(no)),!.
+
+%16(11) Дан целочисленный массив, в котором лишь один элемент отличается от остальных. Необходимо найти значение этого элемента.
+
+count(L,N,Ot):-count(L,N,Ot,0).
+count([],_,K,K):-!.
+count([H|T],El,Ot,K):-
+    H =:= El, K1 is K+1,!,
+    count(T,El,Ot,K1);
+    count(T,El,Ot,K),!.
+
+
+ch(L,Ot):-ch(L,L,Ot,0).
+ch([],_,K,K):-!.
+ch([H|T],L,Ot,C):-
+    count(L,H,K),
+    K =:= 1,!,
+    ch(T,L,Ot,H);
+    ch(T,L,Ot,C),!.
+ask16:-
+    write('input N -> '),
+    read(N),
+    readList(N,L),
+    ch(L,K),
+    write(K).
