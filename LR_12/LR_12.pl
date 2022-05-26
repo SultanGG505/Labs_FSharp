@@ -102,3 +102,32 @@ readList(I,[X|T]) :- write('input - '),read(X), I1 is I - 1, readList(I1, T).
 
 write_list([]) :- !.
 write_list([X|T]) :- write(X), nl, write_list(T).
+
+%15(3)
+% Дан целочисленный массив и натуральный индекс (число, меньшее
+% размера массива). Необходимо определить является ли элемент по указанному индексу глобальным максимумом.
+
+byindex(L,I,El):-byindex(L,I,El,0).
+byindex([H|_],K,H,K):-!.
+byindex([_|Tail],I,El,Cou):-
+    I =:= Cou,
+    byindex(Tail,Cou,El,Cou);
+    Cou1 is Cou + 1,
+    byindex(Tail,I,El,Cou1).
+
+maxEl(L,El):- maxEl(L,-1000,El).
+maxEl([],El,El):-!.
+maxEl([H|T],M,El):-
+    (H>M,M1 is H),
+    maxEl(T,M1,El);
+    maxEl(T,M,El).
+
+ask15:-
+    write('input N -> '),
+    read(N),
+    readList(N,L),
+    write('input I -> '),
+    read(I),
+    byindex(L,I,Elind),
+    maxEl(L,Elmax),
+    (Elind =:= Elmax,write(yes);write(no)),!.
