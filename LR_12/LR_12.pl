@@ -197,3 +197,21 @@ ask18:-
     write('Input I -> '),
     read(I),
     locMin(L,I),!.
+
+%19(27) Дан целочисленный массив. Необходимо осуществить циклический сдвиг элементов массива влево на одну позицию.
+
+appendList([],X,X).
+appendList([X|T],Y,[X|T1]) :- appendList(T,Y,T1).
+
+
+shift(Result, 0, Result) :- !.
+shift([X|T], N, Result) :-
+    N1 is N - 1,
+    appendList(T, [X], NewList),
+    shift(NewList, N1, Result), !.
+
+ask19:-
+    write('Input N -> '),
+    read(N),
+    readList(N,L),
+    shift(L,1,K), write_list(K).
