@@ -187,6 +187,12 @@ ask17:-
 % размера массива). Необходимо определить является ли элемент по указанному индексу локальным минимумом.
 
 locMin(L,I):-I1 is I -1, I2 is I+1,byindex(L,I1,El1),
+    byindex(L,I,El),
+    El1>El,!.
+locMin(L,I):-I1 is I -1, I2 is I+1,
+    byindex(L,I,El),byindex(L,I2,El2),
+    El2>El,!.
+locMin(L,I):-I1 is I -1, I2 is I+1,byindex(L,I1,El1),
     byindex(L,I,El),byindex(L,I2,El2),
     El1>El,El2>El,!.
 
@@ -218,6 +224,14 @@ ask19:-
 
 % 20(30) Дан целочисленный массив и натуральный индекс (число, меньшее
 % размера массива). Необходимо определить является ли элемент по указанному индексу локальным максимумом.
+
+locMax(L,I):-I1 is I -1, I2 is I+1,
+    byindex(L,I,El),byindex(L,I2,El2),
+    El2<El,!.
+
+locMax(L,I):-I1 is I -1, I2 is I+1,byindex(L,I1,El1),
+    byindex(L,I,El),
+    El1<El!.
 
 locMax(L,I):-I1 is I -1, I2 is I+1,byindex(L,I1,El1),
     byindex(L,I,El),byindex(L,I2,El2),
